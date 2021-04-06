@@ -1,0 +1,91 @@
+﻿  varint.c
+  srcck1.c
+  sqldiff.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\sqldiff.c(27): fatal error C1083: Impossible d'ouvrir le fichier include : 'sqlite3.h' : No such file or directory
+  speedtest8inst1.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\speedtest8inst1.c(28): fatal error C1083: Impossible d'ouvrir le fichier include : 'unistd.h' : No such file or directory
+  speedtest8.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\speedtest8.c(38): fatal error C1083: Impossible d'ouvrir le fichier include : 'sqlite3.h' : No such file or directory
+  speedtest16.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\speedtest16.c(29): fatal error C1083: Impossible d'ouvrir le fichier include : 'unistd.h' : No such file or directory
+  showwal.c
+  showstat4.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\showstat4.c(10): fatal error C1083: Impossible d'ouvrir le fichier include : 'sqlite3.h' : No such file or directory
+  showlocks.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\showlocks.c(12): fatal error C1083: Impossible d'ouvrir le fichier include : 'unistd.h' : No such file or directory
+  showjournal.c
+  showdb.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\showdb.c(21): fatal error C1083: Impossible d'ouvrir le fichier include : 'sqlite3.h' : No such file or directory
+  rollback-test.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\rollback-test.c(16): fatal error C1083: Impossible d'ouvrir le fichier include : 'sqlite3.h' : No such file or directory
+  pagesig.c
+  offsets.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\offsets.c(8): fatal error C1083: Impossible d'ouvrir le fichier include : 'sqlite3.h' : No such file or directory
+  mkkeywordhash.c
+  max-limits.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\max-limits.c(5): fatal error C1083: Impossible d'ouvrir le fichier include : 'sqlite3.h' : No such file or directory
+  logest.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\logest.c(37): fatal error C1083: Impossible d'ouvrir le fichier include : 'sqlite3.h' : No such file or directory
+  loadfts.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\loadfts.c(24): fatal error C1083: Impossible d'ouvrir le fichier include : 'dirent.h' : No such file or directory
+  libvers.c
+  lempar.c
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(27): error C2059: erreur de syntaxe : '%'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(217): error C2061: erreur de syntaxe : identificateur 'ParseARG_SDECL'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(221): error C2079: 'yystk0' utilise une struct de 'yyStackEntry' non défini
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(225): error C2059: erreur de syntaxe : '}'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(264): error C2059: erreur de syntaxe : '%'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(272): error C2059: erreur de syntaxe : '%'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(287): error C2037: la partie gauche de 'yystksz' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(288): error C2037: la partie gauche de 'yytos' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(288): error C2037: la partie gauche de 'yystack' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(289): error C2037: la partie gauche de 'yystack' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(289): error C2037: la partie gauche de 'yystk0' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(290): error C2027: utilisation du type non défini 'yyStackEntry'
+  c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(205): note: voir la déclaration de 'yyStackEntry'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(290): warning C4047: '=' : les niveaux d'indirection de 'yyStackEntry *' et de 'int' sont différents
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(291): error C2037: la partie gauche de 'yystk0' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(293): error C2037: la partie gauche de 'yystack' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(293): error C2027: utilisation du type non défini 'yyStackEntry'
+  c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(205): note: voir la déclaration de 'yyStackEntry'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(293): warning C4047: '=' : les niveaux d'indirection de 'yyStackEntry *' et de 'int' sont différents
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(296): error C2037: la partie gauche de 'yystack' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(297): error C2037: la partie gauche de 'yytos' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(297): error C2037: la partie gauche de 'yystack' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(301): error C2037: la partie gauche de 'yystksz' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(304): error C2037: la partie gauche de 'yystksz' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(300): warning C4473: 'fprintf' : nombre insuffisant d'arguments passés pour la chaîne de format
+  c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(300): note: les espaces réservés et leurs paramètres attendent des arguments 3 variadiques, mais des arguments 2 ont été fournis
+  c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(300): note: l'argument variadique manquant 3 est demandé par la chaîne de format '%d'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(327): error C2037: la partie gauche de 'yytos' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(328): error C2037: la partie gauche de 'yystack' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(329): error C2037: la partie gauche de 'yystksz' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(331): error C2037: la partie gauche de 'yystack' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(331): error C2037: la partie gauche de 'yystk0' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(332): error C2037: la partie gauche de 'yystksz' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(336): error C2037: la partie gauche de 'yyerrcnt' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(338): error C2037: la partie gauche de 'yytos' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(338): error C2037: la partie gauche de 'yystack' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(339): error C2037: la partie gauche de 'yystack' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(340): error C2037: la partie gauche de 'yystack' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(358): error C2027: utilisation du type non défini 'yyParser'
+  c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(209): note: voir la déclaration de 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(374): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'yymajor'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(374): error C2081: 'YYCODETYPE' : nom non conforme dans la liste de paramètres formels
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(374): error C2061: erreur de syntaxe : identificateur 'yymajor'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(374): error C2059: erreur de syntaxe : ';'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(374): error C2059: erreur de syntaxe : ','
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(376): error C2059: erreur de syntaxe : ')'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(404): error C2037: la partie gauche de 'yytos' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(405): error C2037: la partie gauche de 'yytos' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(405): error C2037: la partie gauche de 'yystack' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(406): error C2037: la partie gauche de 'yytos' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(411): error C2037: la partie gauche de 'major' indique un struct/union non défini 'yyStackEntry'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(414): error C2037: la partie gauche de 'major' indique un struct/union non défini 'yyStackEntry'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(414): error C2037: la partie gauche de 'minor' indique un struct/union non défini 'yyStackEntry'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(409): warning C4473: 'fprintf' : nombre insuffisant d'arguments passés pour la chaîne de format
+  c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(409): note: les espaces réservés et leurs paramètres attendent des arguments 2 variadiques, mais des arguments 1 ont été fournis
+  c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(409): note: l'argument variadique manquant 2 est demandé par la chaîne de format '%s'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(422): error C2037: la partie gauche de 'yytos' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(422): error C2037: la partie gauche de 'yystack' indique un struct/union non défini 'yyParser'
+c:\users\yo\documents\visual studio 2015\projects\sqlite-src-3180000\tool\lempar.c(422): fatal error C1903: impossible de récupérer à partir des erreurs précédentes ; arrêt de la compilation

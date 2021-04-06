@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="test|Win32">
+      <Configuration>test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="test|x64">
+      <Configuration>test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{034A4232-ECDC-4087-B308-F27697FA0583}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='test|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>Pure</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='test|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='test|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>nmake /f Makefile.msc shell</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>nmake /f Makefile.msc clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>nmake /f Makefile.msc all</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions) SQLITE_DEBUG=1</NMakePreprocessorDefinitions>
+    <IncludePath>D:\Tcl\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.15063.0\ucrt;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Tcl\lib;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.15063.0\ucrt\x86;C:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib\onecore\x86;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.15063.0\um\x86</LibraryPath>
+    <ExecutablePath>C:\Program Files (x86)\Windows Kits\10\bin\10.0.15063.0\x86;$(ExecutablePath)</ExecutablePath>
+    <AdditionalOptions>-DSQLITE_LUCIA=1</AdditionalOptions>
+    <NMakeIncludeSearchPath>D:\Tcl\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.15063.0\ucrt;D:\sqlite-src-3180000\tsrc;$(IncludePath)</NMakeIncludeSearchPath>
+    <NMakeAssemblySearchPath>D:\Tcl\lib;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.15063.0\ucrt\x86;C:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib\onecore\x86;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.15063.0\um\x86</NMakeAssemblySearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='test|Win32'">
+    <NMakeBuildCommandLine>nmake /f Makefile.msc shell</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>nmake /f Makefile.msc clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>nmake /f Makefile.msc all</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions) SQLITE_DEBUG=1</NMakePreprocessorDefinitions>
+    <IncludePath>D:\Tcl\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.15063.0\ucrt;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Tcl\lib;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.15063.0\ucrt\x86;C:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib\onecore\x86;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.15063.0\um\x86</LibraryPath>
+    <ExecutablePath>C:\Program Files (x86)\Windows Kits\10\bin\10.0.15063.0\x86;$(ExecutablePath)</ExecutablePath>
+    <AdditionalOptions />
+    <NMakeIncludeSearchPath>D:\Tcl\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.15063.0\ucrt;D:\sqlite-src-3180000\src;$(IncludePath)</NMakeIncludeSearchPath>
+    <NMakeAssemblySearchPath>D:\Tcl\lib;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.15063.0\ucrt\x86;C:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib\onecore\x86;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.15063.0\um\x86</NMakeAssemblySearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>nmake /f Makefile.msc</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>nmake /f Makefile.msc clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>nmake /f Makefile.msc</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ExecutablePath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\bin\HostX86\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.15063.0\x64;$(VC_ExecutablePath_x64);$(WindowsSDK_ExecutablePath);$(PATH)</ExecutablePath>
+    <IncludePath>D:\Tcl\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>D:\Tcl\lib;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.15063.0\ucrt\x64;C:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib\onecore\x64;C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.15063.0\um\x64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <NMakeBuildCommandLine>nmake /f Makefile.msc shell</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>nmake /f Makefile.msc all</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>nmake /f Makefile.msc clean</NMakeCleanCommandLine>
+    <NMakeIncludeSearchPath>D:\Tcl\include;C:\Program Files %28x86%29\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\lib\onecore\x64;C:\Program Files\Windows Kits\10\Include\10.0.15063.0\shared;C:\Program Files\Windows Kits\10\Include\10.0.15063.0\um;C:\Program Files\Windows Kits\10\Include\10.0.15063.0\ucrt;$(IncludePath);d:\sqlite-src-3180000\tsrc</NMakeIncludeSearchPath>
+    <NMakeAssemblySearchPath>D:\Tcl\lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.15063.0\ucrt\x64;C:\Program Files\Windows Kits\10\Lib\10.0.15063.0\um\x64</NMakeAssemblySearchPath>
+    <AdditionalOptions>-DSQLITE_LUCIA=1</AdditionalOptions>
+    <ExcludePath />
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions) SQLITE_DEBUG=1</NMakePreprocessorDefinitions>
+    <NMakeOutput>winsqlite3shell.exe</NMakeOutput>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="autoconf\tea\win\nmakehlp.c" />
+    <ClCompile Include="ext\async\sqlite3async.c" />
+    <ClCompile Include="ext\fts1\fts1.c" />
+    <ClCompile Include="ext\fts1\fts1_hash.c" />
+    <ClCompile Include="ext\fts1\fts1_porter.c" />
+    <ClCompile Include="ext\fts1\fts1_tokenizer1.c" />
+    <ClCompile Include="ext\fts1\ft_hash.c" />
+    <ClCompile Include="ext\fts1\fulltext.c" />
+    <ClCompile Include="ext\fts1\simple_tokenizer.c" />
+    <ClCompile Include="ext\fts2\fts2.c" />
+    <ClCompile Include="ext\fts2\fts2_hash.c" />
+    <ClCompile Include="ext\fts2\fts2_icu.c" />
+    <ClCompile Include="ext\fts2\fts2_porter.c" />
+    <ClCompile Include="ext\fts2\fts2_tokenizer.c" />
+    <ClCompile Include="ext\fts2\fts2_tokenizer1.c" />
+    <ClCompile Include="ext\fts3\fts3.c" />
+    <ClCompile Include="ext\fts3\fts3_aux.c" />
+    <ClCompile Include="ext\fts3\fts3_expr.c" />
+    <ClCompile Include="ext\fts3\fts3_hash.c" />
+    <ClCompile Include="ext\fts3\fts3_icu.c" />
+    <ClCompile Include="ext\fts3\fts3_porter.c" />
+    <ClCompile Include="ext\fts3\fts3_snippet.c" />
+    <ClCompile Include="ext\fts3\fts3_term.c" />
+    <ClCompile Include="ext\fts3\fts3_test.c" />
+    <ClCompile Include="ext\fts3\fts3_tokenizer.c" />
+    <ClCompile Include="ext\fts3\fts3_tokenizer1.c" />
+    <ClCompile Include="ext\fts3\fts3_tokenize_vtab.c" />
+    <ClCompile Include="ext\fts3\fts3_unicode.c" />
+    <ClCompile Include="ext\fts3\fts3_unicode2.c" />
+    <ClCompile Include="ext\fts3\fts3_write.c" />
+    <ClCompile Include="ext\fts3\tool\fts3view.c" />
+    <ClCompile Include="ext\fts5\fts5_aux.c" />
+    <ClCompile Include="ext\fts5\fts5_buffer.c" />
+    <ClCompile Include="ext\fts5\fts5_config.c" />
+    <ClCompile Include="ext\fts5\fts5_expr.c" />
+    <ClCompile Include="ext\fts5\fts5_hash.c" />
+    <ClCompile Include="ext\fts5\fts5_index.c" />
+    <ClCompile Include="ext\fts5\fts5_main.c" />
+    <ClCompile Include="ext\fts5\fts5_storage.c" />
+    <ClCompile Include="ext\fts5\fts5_tcl.c" />
+    <ClCompile Include="ext\fts5\fts5_test_mi.c" />
+    <ClCompile Include="ext\fts5\fts5_test_tok.c" />
+    <ClCompile Include="ext\fts5\fts5_tokenize.c" />
+    <ClCompile Include="ext\fts5\fts5_unicode2.c" />
+    <ClCompile Include="ext\fts5\fts5_varint.c" />
+    <ClCompile Include="ext\fts5\fts5_vocab.c" />
+    <ClCompile Include="ext\icu\icu.c" />
+    <ClCompile Include="ext\misc\amatch.c" />
+    <ClCompile Include="ext\misc\carray.c" />
+    <ClCompile Include="ext\misc\closure.c" />
+    <ClCompile Include="ext\misc\compress.c" />
+    <ClCompile Include="ext\misc\csv.c" />
+    <ClCompile Include="ext\misc\dbdump.c" />
+    <ClCompile Include="ext\misc\eval.c" />
+    <ClCompile Include="ext\misc\fileio.c" />
+    <ClCompile Include="ext\misc\fuzzer.c" />
+    <ClCompile Include="ext\misc\ieee754.c" />
+    <ClCompile Include="ext\misc\json1.c" />
+    <ClCompile Include="ext\misc\memvfs.c" />
+    <ClCompile Include="ext\misc\nextchar.c" />
+    <ClCompile Include="ext\misc\percentile.c" />
+    <ClCompile Include="ext\misc\regexp.c" />
+    <ClCompile Include="ext\misc\remember.c" />
+    <ClCompile Include="ext\misc\rot13.c" />
+    <ClCompile Include="ext\misc\scrub.c" />
+    <ClCompile Include="ext\misc\series.c" />
+    <ClCompile Include="ext\misc\sha1.c" />
+    <ClCompile Include="ext\misc\shathree.c" />
+    <ClCompile Include="ext\misc\showauth.c" />
+    <ClCompile Include="ext\misc\spellfix.c" />
+    <ClCompile Include="ext\misc\totype.c" />
+    <ClCompile Include="ext\misc\vfslog.c" />
+    <ClCompile Include="ext\misc\vfsstat.c" />
+    <ClCompile Include="ext\misc\vtshim.c" />
+    <ClCompile Include="ext\misc\wholenumber.c" />
+    <ClCompile Include="ext\rbu\rbu.c" />
+    <ClCompile Include="ext\rbu\sqlite3rbu.c" />
+    <ClCompile Include="ext\rbu\test_rbu.c" />
+    <ClCompile Include="ext\rtree\rtree.c" />
+    <ClCompile Include="ext\session\changeset.c" />
+    <ClCompile Include="ext\session\session_speed_test.c" />
+    <ClCompile Include="ext\session\sqlite3session.c" />
+    <ClCompile Include="ext\session\test_session.c" />
+    <ClCompile Include="ext\userauth\userauth.c" />
+    <ClCompile Include="mptest\mptest.c" />
+    <ClCompile Include="parse.c" />
+    <ClCompile Include="src\alter.c" />
+    <ClCompile Include="src\analyze.c" />
+    <ClCompile Include="src\attach.c" />
+    <ClCompile Include="src\auth.c" />
+    <ClCompile Include="src\backup.c" />
+    <ClCompile Include="src\bitvec.c" />
+    <ClCompile Include="src\btmutex.c" />
+    <ClCompile Include="src\btree.c" />
+    <ClCompile Include="src\build.c" />
+    <ClCompile Include="src\callback.c" />
+    <ClCompile Include="src\complete.c" />
+    <ClCompile Include="src\ctime.c" />
+    <ClCompile Include="src\date.c" />
+    <ClCompile Include="src\dbstat.c" />
+    <ClCompile Include="src\delete.c" />
+    <ClCompile Include="src\expr.c" />
+    <ClCompile Include="src\fault.c" />
+    <ClCompile Include="src\fkey.c" />
+    <ClCompile Include="src\func.c" />
+    <ClCompile Include="src\global.c" />
+    <ClCompile Include="src\hash.c" />
+    <ClCompile Include="src\insert.c" />
+    <ClCompile Include="src\legacy.c" />
+    <ClCompile Include="src\loadext.c" />
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\malloc.c" />
+    <ClCompile Include="src\mem0.c" />
+    <ClCompile Include="src\mem1.c" />
+    <ClCompile Include="src\mem2.c" />
+    <ClCompile Include="src\mem3.c" />
+    <ClCompile Include="src\mem5.c" />
+    <ClCompile Include="src\memjournal.c" />
+    <ClCompile Include="src\mutex.c" />
+    <ClCompile Include="src\mutex_noop.c" />
+    <ClCompile Include="src\mutex_unix.c" />
+    <ClCompile Include="src\mutex_w32.c" />
+    <ClCompile Include="src\notify.c" />
+    <ClCompile Include="src\os.c" />
+    <ClCompile Include="src\os_unix.c" />
+    <ClCompile Include="src\os_win.c" />
+    <ClCompile Include="src\pager.c" />
+    <ClCompile Include="src\pcache.c" />
+    <ClCompile Include="src\pcache1.c" />
+    <ClCompile Include="src\pragma.c" />
+    <ClCompile Include="src\prepare.c" />
+    <ClCompile Include="src\printf.c" />
+    <ClCompile Include="src\random.c" />
+    <ClCompile Include="src\resolve.c" />
+    <ClCompile Include="src\rowset.c" />
+    <ClCompile Include="src\select.c" />
+    <ClCompile Include="src\shell.c" />
+    <ClCompile Include="src\sp.c" />
+    <ClCompile Include="src\status.c" />
+    <ClCompile Include="src\table.c" />
+    <ClCompile Include="src\tclsqlite.c" />
+    <ClCompile Include="src\test1.c" />
+    <ClCompile Include="src\test2.c" />
+    <ClCompile Include="src\test3.c" />
+    <ClCompile Include="src\test4.c" />
+    <ClCompile Include="src\test5.c" />
+    <ClCompile Include="src\test6.c" />
+    <ClCompile Include="src\test7.c" />
+    <ClCompile Include="src\test8.c" />
+    <ClCompile Include="src\test9.c" />
+    <ClCompile Include="src\test_async.c" />
+    <ClCompile Include="src\test_autoext.c" />
+    <ClCompile Include="src\test_backup.c" />
+    <ClCompile Include="src\test_bestindex.c" />
+    <ClCompile Include="src\test_blob.c" />
+    <ClCompile Include="src\test_btree.c" />
+    <ClCompile Include="src\test_config.c" />
+    <ClCompile Include="src\test_delete.c" />
+    <ClCompile Include="src\test_demovfs.c" />
+    <ClCompile Include="src\test_devsym.c" />
+    <ClCompile Include="src\test_fs.c" />
+    <ClCompile Include="src\test_func.c" />
+    <ClCompile Include="src\test_hexio.c" />
+    <ClCompile Include="src\test_init.c" />
+    <ClCompile Include="src\test_intarray.c" />
+    <ClCompile Include="src\test_journal.c" />
+    <ClCompile Include="src\test_loadext.c" />
+    <ClCompile Include="src\test_malloc.c" />
+    <ClCompile Include="src\test_multiplex.c" />
+    <ClCompile Include="src\test_mutex.c" />
+    <ClCompile Include="src\test_onefile.c" />
+    <ClCompile Include="src\test_osinst.c" />
+    <ClCompile Include="src\test_pcache.c" />
+    <ClCompile Include="src\test_quota.c" />
+    <ClCompile Include="src\test_rtree.c" />
+    <ClCompile Include="src\test_schema.c" />
+    <ClCompile Include="src\test_server.c" />
+    <ClCompile Include="src\test_sqllog.c" />
+    <ClCompile Include="src\test_superlock.c" />
+    <ClCompile Include="src\test_syscall.c" />
+    <ClCompile Include="src\test_tclvar.c" />
+    <ClCompile Include="src\test_thread.c" />
+    <ClCompile Include="src\test_vfs.c" />
+    <ClCompile Include="src\test_vfstrace.c" />
+    <ClCompile Include="src\test_windirent.c" />
+    <ClCompile Include="src\test_wsd.c" />
+    <ClCompile Include="src\threads.c" />
+    <ClCompile Include="src\tokenize.c" />
+    <ClCompile Include="src\treeview.c" />
+    <ClCompile Include="src\trigger.c" />
+    <ClCompile Include="src\update.c" />
+    <ClCompile Include="src\utf.c" />
+    <ClCompile Include="src\util.c" />
+    <ClCompile Include="src\vacuum.c" />
+    <ClCompile Include="src\vdbe.c" />
+    <ClCompile Include="src\vdbeapi.c" />
+    <ClCompile Include="src\vdbeaux.c" />
+    <ClCompile Include="src\vdbeblob.c" />
+    <ClCompile Include="src\vdbemem.c" />
+    <ClCompile Include="src\vdbesort.c" />
+    <ClCompile Include="src\vdbetrace.c" />
+    <ClCompile Include="src\vtab.c" />
+    <ClCompile Include="src\wal.c" />
+    <ClCompile Include="src\walker.c" />
+    <ClCompile Include="src\web.c" />
+    <ClCompile Include="src\where.c" />
+    <ClCompile Include="src\wherecode.c" />
+    <ClCompile Include="src\whereexpr.c" />
+    <ClCompile Include="test\crashtest1.c" />
+    <ClCompile Include="test\dbfuzz.c" />
+    <ClCompile Include="test\fuzzcheck.c" />
+    <ClCompile Include="test\kvtest.c" />
+    <ClCompile Include="test\ossfuzz.c" />
+    <ClCompile Include="test\ossshell.c" />
+    <ClCompile Include="test\speedtest1.c" />
+    <ClCompile Include="test\threadtest1.c" />
+    <ClCompile Include="test\threadtest2.c" />
+    <ClCompile Include="test\threadtest3.c" />
+    <ClCompile Include="test\threadtest4.c" />
+    <ClCompile Include="test\tt3_checkpoint.c" />
+    <ClCompile Include="test\tt3_index.c" />
+    <ClCompile Include="test\tt3_lookaside1.c" />
+    <ClCompile Include="test\tt3_stress.c" />
+    <ClCompile Include="test\tt3_vacuum.c" />
+    <ClCompile Include="test\wordcount.c" />
+    <ClCompile Include="tool\checkSpacing.c" />
+    <ClCompile Include="tool\dbhash.c" />
+    <ClCompile Include="tool\extract.c" />
+    <ClCompile Include="tool\fast_vacuum.c" />
+    <ClCompile Include="tool\fuzzershell.c" />
+    <ClCompile Include="tool\getlock.c" />
+    <ClCompile Include="tool\lemon.c" />
+    <ClCompile Include="tool\lempar.c" />
+    <ClCompile Include="tool\libvers.c" />
+    <ClCompile Include="tool\loadfts.c" />
+    <ClCompile Include="tool\logest.c" />
+    <ClCompile Include="tool\max-limits.c" />
+    <ClCompile Include="tool\mkkeywordhash.c" />
+    <ClCompile Include="tool\offsets.c" />
+    <ClCompile Include="tool\pagesig.c" />
+    <ClCompile Include="tool\rollback-test.c" />
+    <ClCompile Include="tool\showdb.c" />
+    <ClCompile Include="tool\showjournal.c" />
+    <ClCompile Include="tool\showlocks.c" />
+    <ClCompile Include="tool\showstat4.c" />
+    <ClCompile Include="tool\showwal.c" />
+    <ClCompile Include="tool\speedtest16.c" />
+    <ClCompile Include="tool\speedtest8.c" />
+    <ClCompile Include="tool\speedtest8inst1.c" />
+    <ClCompile Include="tool\sqldiff.c" />
+    <ClCompile Include="tool\srcck1.c" />
+    <ClCompile Include="tool\varint.c" />
+    <ClCompile Include="vsixtest\App.xaml.cpp" />
+    <ClCompile Include="vsixtest\MainPage.xaml.cpp" />
+    <ClCompile Include="vsixtest\pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ext\async\sqlite3async.h" />
+    <ClInclude Include="ext\fts1\fts1.h" />
+    <ClInclude Include="ext\fts1\fts1_hash.h" />
+    <ClInclude Include="ext\fts1\fts1_tokenizer.h" />
+    <ClInclude Include="ext\fts1\ft_hash.h" />
+    <ClInclude Include="ext\fts1\fulltext.h" />
+    <ClInclude Include="ext\fts1\tokenizer.h" />
+    <ClInclude Include="ext\fts2\fts2.h" />
+    <ClInclude Include="ext\fts2\fts2_hash.h" />
+    <ClInclude Include="ext\fts2\fts2_tokenizer.h" />
+    <ClInclude Include="ext\fts3\fts3.h" />
+    <ClInclude Include="ext\fts3\fts3Int.h" />
+    <ClInclude Include="ext\fts3\fts3_hash.h" />
+    <ClInclude Include="ext\fts3\fts3_tokenizer.h" />
+    <ClInclude Include="ext\fts5\fts5.h" />
+    <ClInclude Include="ext\fts5\fts5Int.h" />
+    <ClInclude Include="ext\icu\sqliteicu.h" />
+    <ClInclude Include="ext\rbu\sqlite3rbu.h" />
+    <ClInclude Include="ext\rtree\rtree.h" />
+    <ClInclude Include="ext\rtree\sqlite3rtree.h" />
+    <ClInclude Include="ext\session\sqlite3session.h" />
+    <ClInclude Include="ext\userauth\sqlite3userauth.h" />
+    <ClInclude Include="src\btree.h" />
+    <ClInclude Include="src\btreeInt.h" />
+    <ClInclude Include="src\hash.h" />
+    <ClInclude Include="src\hwtime.h" />
+    <ClInclude Include="src\msvc.h" />
+    <ClInclude Include="src\mutex.h" />
+    <ClInclude Include="src\os.h" />
+    <ClInclude Include="src\os_common.h" />
+    <ClInclude Include="src\os_setup.h" />
+    <ClInclude Include="src\os_win.h" />
+    <ClInclude Include="src\pager.h" />
+    <ClInclude Include="src\pcache.h" />
+    <ClInclude Include="src\pragma.h" />
+    <ClInclude Include="src\sqlite3ext.h" />
+    <ClInclude Include="src\sqliteInt.h" />
+    <ClInclude Include="src\sqliteLimit.h" />
+    <ClInclude Include="src\test_intarray.h" />
+    <ClInclude Include="src\test_multiplex.h" />
+    <ClInclude Include="src\test_quota.h" />
+    <ClInclude Include="src\test_windirent.h" />
+    <ClInclude Include="src\vdbe.h" />
+    <ClInclude Include="src\vdbeInt.h" />
+    <ClInclude Include="src\vxworks.h" />
+    <ClInclude Include="src\wal.h" />
+    <ClInclude Include="src\whereInt.h" />
+    <ClInclude Include="vsixtest\App.xaml.h" />
+    <ClInclude Include="vsixtest\MainPage.xaml.h" />
+    <ClInclude Include="vsixtest\pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\sqlite3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="doc\lemon.html" />
+    <None Include="src\parse.y" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

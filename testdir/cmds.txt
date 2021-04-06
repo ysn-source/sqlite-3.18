@@ -1,0 +1,1 @@
+INSERT INTO f2 VALUES(3, readfile('shell7_test.bin'));

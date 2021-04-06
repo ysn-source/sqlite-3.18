@@ -1,0 +1,9 @@
+﻿  
+  Microsoft (R) Program Maintenance Utility Version 14.10.25019.0
+  Copyright (C) Microsoft Corporation. Tous droits rÚservÚs.
+  
+  	link.exe /DEBUG  /NOLOGO /MACHINE:x64 /DYNAMICBASE /NODEFAULTLIB:kernel32.lib mincore.lib /guard:cf "/LIBPATH:\lib\ucrt\x64" /NODEFAULTLIB:libucrtd.lib /DEFAULTLIB:ucrtd.lib  /DLL  /OUT:winsqlite3.dll vdbe.lo parse.lo alter.lo analyze.lo attach.lo auth.lo  backup.lo bitvec.lo btmutex.lo btree.lo build.lo  callback.lo complete.lo ctime.lo date.lo dbstat.lo delete.lo  expr.lo fault.lo fkey.lo  fts3.lo fts3_aux.lo fts3_expr.lo fts3_hash.lo fts3_icu.lo  fts3_porter.lo fts3_snippet.lo fts3_tokenizer.lo fts3_tokenizer1.lo  fts3_tokenize_vtab.lo fts3_unicode.lo fts3_unicode2.lo fts3_write.lo  fts5.lo  func.lo global.lo hash.lo  icu.lo insert.lo legacy.lo loadext.lo  main.lo malloc.lo mem0.lo mem1.lo mem2.lo mem3.lo mem5.lo  memjournal.lo  mutex.lo mutex_noop.lo mutex_unix.lo mutex_w32.lo  notify.lo opcodes.lo os.lo os_unix.lo os_win.lo  pager.lo pcache.lo pcache1.lo pragma.lo prepare.lo printf.lo  random.lo resolve.lo rowset.lo rtree.lo  sqlite3session.lo select.lo sqlite3rbu.lo status.lo  table.lo threads.lo tokenize.lo treeview.lo trigger.lo sp.lo  update.lo util.lo vacuum.lo  vdbeapi.lo vdbeaux.lo vdbeblob.lo vdbemem.lo vdbesort.lo  vdbetrace.lo wal.lo walker.lo where.lo wherecode.lo whereexpr.lo  utf.lo vtab.lo   
+vdbe.lo : fatal error LNK1112: type d'ordinateur module 'X86' en conflit avec le type d'ordinateur cible 'x64'
+NMAKE : fatal error U1077: '"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\bin\HostX86\x86\link.exe"'á: code retour '0x458'
+  Stop.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(49,5): error MSB3073: La commande "nmake /f Makefile.msc all" s'est arrêtée avec le code 2.
