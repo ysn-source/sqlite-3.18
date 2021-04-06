@@ -2,6 +2,7 @@
 /art/
 /vsixtest/
 /Debug/
+/x64/
 *.lo
 *.pdb
 *.exe
