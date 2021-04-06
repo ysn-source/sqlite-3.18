@@ -1,3 +1,7 @@
+/.vs/
+/art/
+/vsixtest/
+/Debug/
 *.lo
 *.pdb
 *.exe
